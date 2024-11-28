@@ -1,0 +1,168 @@
+.sinopse
+{
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+    
+    h3 
+    {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family:Electrolize, Verdana, Geneva, Tahoma, sans-serif ;
+        color: rgb(251, 255, 3);
+        font-size: 32px;
+        font-weight: 100;
+    }
+
+    &_questoes
+    {
+        &_item
+        {
+            margin-bottom: 2vh;
+            list-style: none;
+            &_pergunta 
+            {
+                color: rgb(251, 255, 3);
+                font-family:Electrolize, Verdana, Geneva, Tahoma, sans-serif ;
+                cursor: pointer;
+                font-size: 24px;
+                background-color: rgb(37, 35, 35);
+                border-radius: 5px;
+                text-align: left;
+                padding-left: 2vw;
+                position: relative;
+
+                &::after
+                {
+                    content: '+';
+                    position: absolute;
+                    top:0;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    right: 2vw;
+                }
+
+                
+            }
+            // &_resposta
+            // {
+            //     color: rgb(209, 212, 3);
+            //     font-family:Nova Square, Verdana, Geneva, Tahoma, sans-serif ;
+            //     text-align: left;
+            //     padding-left: 2vw;
+            // }
+            &_resposta
+            {
+                height: 0;
+                overflow: hidden;
+                background-color: rgb(37, 35, 35);
+                padding-left: 2vw;
+                font-size: 20px;
+                transition: height, 2s ease;
+            }
+
+            &--aberto
+            {
+                .sinopse_questoes_item_pergunta::after
+                {
+                    content: '-';
+                }
+
+                .sinopse_questoes_item_resposta
+                {
+                    color: rgb(209, 212, 3);
+                    font-family:Nova Square, Verdana, Geneva, Tahoma, sans-serif ;
+                    text-align: left;
+                    padding-left: 2vw;
+                    height: auto;
+                    transition: height, 1s ease;
+                    font-size: 20px;
+                    margin-bottom: 4vh;
+                } 
+
+            }    
+            
+        }
+    }
+
+    @media(min-width:768px)
+    {
+        h3 
+        {
+            font-size: 56px;
+            font-weight: 100;
+            margin-top: 6vh;
+            margin-bottom: 3vh;
+            color: rgb(15, 241, 45);
+        }
+        
+        &_questoes
+        {
+            
+            &_item
+            {
+                &_pergunta 
+                {
+                    font-size: 52px;
+                    color: rgb(15, 241, 45);
+                    color: rgb(4, 192, 51);
+                }
+                &_resposta
+                {
+                    padding-left: 2vw;
+                    font-size: 42px;
+                }
+                &--aberto
+                {
+                    .sinopse_questoes_item_resposta
+                    {
+                        color: rgb(15, 241, 45);
+                        font-size: 42px;
+                        margin-bottom: 4vh;
+                    } 
+                }    
+            }
+        }   
+    }
+
+    @media(min-width:1200px)
+    {
+        h3 
+        {
+            font-size: 56px;
+            font-weight: 100;
+            margin-top: 6vh;
+            margin-bottom: 2vh;
+            color: rgb(0, 221, 250);
+        }
+
+        &_questoes
+        {
+            &_item
+            {
+                &_pergunta 
+                {
+                    font-size: 58px;
+                    color: rgb(3, 217, 255);
+                    color: rgb(0, 221, 250);
+                }
+
+                &_resposta
+                {
+                    font-size: 55px;
+                }
+
+                &--aberto
+                {
+                    .sinopse_questoes_item_resposta
+                    {
+                        color: rgb(0, 221, 250);
+                        font-size:  55px;
+                        margin-bottom: 4vh;
+                    } 
+                }    
+            }
+        }   
+    }
+}

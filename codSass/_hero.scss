@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     position: relative;
 
     &_bloco
@@ -13,7 +13,7 @@
         text-align: center;
         background-color: transparent;
         position: absolute;
-        top:5%;
+        top:15%;
         
         img
         {
@@ -97,7 +97,7 @@
             color: rgb(251, 255, 0);
             font-family:Nova Square, Verdana, Geneva, Tahoma, sans-serif ;
             font-size: 24px;
-            padding-top: 85vh;
+            padding-top: 92vh;
     }
 
     .sumir
@@ -110,12 +110,14 @@
         background-image: url(../imagens/Pacific_rimTablet.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 85vh;
+        height: 100vh;
         
         &_bloco
         {
-            max-width: 80%;
-            left: 10vw;
+            max-width: 70%;
+            top:10%;
+            left: 15vw;
+            margin: 0 auto;
             img
             {
                 padding-bottom: 5vh;
@@ -130,9 +132,10 @@
                 }
                 .btn 
                 {
-                    height: 100px;
+                    height: 80px;
                     border: 8px solid black;
                     width: 200px ;
+                    margin: 5vh auto;
                 }
                 .preco 
                 {
@@ -150,7 +153,7 @@
             color: rgb(15, 241, 45);
             font-family:Nova Square, Verdana, Geneva, Tahoma, sans-serif ;
             font-size: 48px;
-            // padding-top: 90vh;
+            padding-top: 85vh;
         }
 
     }    
@@ -161,12 +164,13 @@
         background-image: url(../imagens/Pacific_rimFull.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 85vh; 
+        height: 100vh; 
 
         &_bloco
         {
-            left: 10vw;
-
+            margin: 0 auto;
+            max-width: 70%;
+            left: 15vw;
             // img
             // {
             //     padding-bottom: 7vh;
@@ -181,7 +185,7 @@
             // }        
             li 
             {
-                max-height: 200px;
+                max-height: 500px;
                 button
                 {
                     // margin-left:25%;
@@ -216,6 +220,7 @@
             -webkit-text-stroke: 2px rgb(255, 0, 0);
             font-family:Nova Square, Verdana, Geneva, Tahoma, sans-serif ;
             font-size: 56px;
+            padding-top: 85vh;
         }
     }    
 }

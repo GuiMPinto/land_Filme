@@ -115,35 +115,39 @@
         &_bloco
         {
             max-width: 60%;
-            top:10%;
+            top:5%;
             left: 20vw;
             margin: 0 auto;
             img
             {
                 padding-bottom: 5vh;
+                max-width: 70%;
             }
-            
-            li 
+            ul 
             {
-                max-height: 200px;
-                button
+                max-width: 95%;
+                li 
                 {
-                    font-size: 32px; 
-                }
-                .btn 
-                {
-                    height: 80px;
-                    border: 8px solid black;
-                    width: 200px ;
-                    margin: 5vh auto;
-                }
-                .preco 
-                {
-                    font-size: 36px;
+                    max-height: 120px;
+                    max-width: 50%;
+                    button
+                    {
+                        font-size: 24px; 
+                    }
+                    .btn 
+                    {
+                        height: 80px;
+                        border: 8px solid black;
+                        width: 160px ;
+                        margin: 5vh auto;
+                    }
+                    .preco 
+                    {
+                        font-size: 30px;
+                    }
                 }
             }    
         }
-
         &_abaixo
         {
             
@@ -153,9 +157,11 @@
             color: #e636b1;
             -webkit-text-stroke: 2px rgb(68, 0, 255);
             font-family:Nova Square, Verdana, Geneva, Tahoma, sans-serif ;
-            font-size: 48px;
-            padding-top: 3vh;
-        }
+            font-size: 42px;
+            margin-top: 2vh;
+        }        
+
+        
 
     }    
 
@@ -171,48 +177,59 @@
         &_bloco
         {
             margin: 0 auto;
-            max-width: 70%;
+            max-width: 65%;
             left: 15vw;
             top: 5vh;
             
-            // img
-            // {
-            //     padding-bottom: 7vh;
-            // }
-            // ul 
-            // {
-            //     margin-bottom: 3vh;
-            // }
-            // .btn 
-            // {
-            //     margin-left:30%; 
-            // }        
-            li 
+            img
             {
-                max-height: 500px;
-                button
+                max-width: 60%;
+            }
+            ul 
+            {
+            margin-bottom: 2vh;
+                li 
                 {
-                    // margin-left:25%;
-                    // margin-top: 2vh;
-                    // margin-bottom: 2vh;
-                    // width: 50%;
-                    // height: 60px;
-                    font-size: 32px;
-                    margin-right: 120px;
-                    margin-left: 0vw;
-                    max-width: 100%;
-                }
-                .btn 
-                {
-                    width: 250px ;
-                    height: 100px; 
-                    margin: 5vh auto;
-                }
-                .preco 
-                {
-                    font-size: 48px;
-                }
-            }       
+                    max-height: 400px;
+                    button
+                    {
+                        // margin-left:25%;
+                        // margin-top: 2vh;
+                        // margin-bottom: 2vh;
+                        // width: 50%;
+                        // height: 60px;
+                        font-size: 28px;
+                        margin-right: 120px;
+                        margin-left: 0vw;
+                        max-width: 100%;
+                    }
+
+                    img 
+                    {
+                        max-width: 50%;
+                        padding-bottom: 0;
+                        
+                    }
+                    .imagem2
+                    {
+                        max-width: 60%;
+                    }
+                    .btn 
+                    {
+                        width: 200px ;
+                        height: 80px; 
+                        margin: 2vh auto;
+                    }
+                    .preco 
+                    {
+                        font-size: 40px;
+                    }
+                } 
+            }
+            .btn 
+            {
+                margin-left:30%; 
+            }                 
         }  
         &_abaixo
         {

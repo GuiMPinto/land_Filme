@@ -1,5 +1,6 @@
 @use 'hero.scss';
 @use 'sinopse.scss';
+@use 'footer.scss';
 
 body
 {
@@ -8,6 +9,12 @@ body
     padding: 0px;
     box-sizing: border-box;
     
+    h3,h2,ul,p
+    {
+        margin: 0;
+        padding: 0;
+    }
+
     @media(min-width:1200px)
     {
         background-color: rgb(61, 84, 95);
@@ -17,31 +24,4 @@ body
     {
         background-color: rgb(44, 45, 49);
     }
-}
-
-footer
-{
-    color: rgb(252, 122, 0);
-    text-align: center;
-    font-family:Nova Square, Verdana, Geneva, Tahoma, sans-serif ;
-    margin-top: 5vh;
-    margin-bottom: 4vh;
-    font-size: 10px;
-    padding-right: 10vw;
-    padding-left: 10vw;
-
-    @media(min-width:768px)
-    {
-        font-size: 18px;
-    }
-    @media(min-width:1200px)
-    {
-        font-size: 20px;
-    }
-
-}
-h3,h2,ul,p
-{
-    margin: 0;
-    padding: 0;
 }

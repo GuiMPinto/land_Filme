@@ -166,12 +166,15 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh; 
+        
 
         &_bloco
         {
             margin: 0 auto;
             max-width: 70%;
             left: 15vw;
+            top: 5vh;
+            
             // img
             // {
             //     padding-bottom: 7vh;
